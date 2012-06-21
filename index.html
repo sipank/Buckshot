@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Buckshot : Buckshot is a template-driven UI Framework for modern web applications." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Buckshot</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/prujohn/Buckshot">View on GitHub</a>
+
+          <h1 id="project_title">Buckshot</h1>
+          <h2 id="project_tagline">Buckshot is a template-driven UI Framework for modern web applications.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/prujohn/Buckshot/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/prujohn/Buckshot/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Buckshot [buhk-shot] <em>noun</em> When darts land wildly all over the board.</h3>
+
+<p>Buckshot is a template-driven UI Framework for modern web applications. It is written in Google Dart and attempts to model well known "plug-in" technologies, but without the need for a plug-in. Buckshot renders all output in HTML5/CSS3, and makes use of features available in today's modern web browsers.</p>
+
+<p>If you've worked with .net WPF or Silverlight then this framework will feel very familiar to you.</p>
+
+<h2>Status: Alpha</h2>
+
+<p>Project is currently in the <strong>alpha</strong> stage of development.  It will likely not move to beta or v1.0 until after Dart ships v1.0. This is to ensure that that library is working correctly with the Dart APIs, which are still in flux.</p>
+
+<h2>Bleeding Edge</h2>
+
+<p>Buckshot uses the very latest in HTML5/CSS3 standards.  No shims are yet in place to compensate for older or non-compliant browsers.</p>
+
+<p>In particular, the layout model uses the latest draft of the <a href="http://dev.w3.org/csswg/css3-flexbox/">CSS3 flexbox</a> spec, so it will currently only work with the latest build of Chromium or Dartium.</p>
+
+<h2>Getting Started</h2>
+
+<h3>Videos</h3>
+
+<ul>
+<li><a href="http://www.youtube.com/watch?v=9YXeNalVeGA">Setting Up A Buckshot Project</a></li>
+<li><a href="http://www.youtube.com/watch?v=PbgixkIIPWQ">Border</a></li>
+<li><a href="http://www.youtube.com/watch?v=ykB_gjbnapg">StackPanel</a></li>
+<li><a href="http://www.youtube.com/watch?v=_EXuAew-J98">Grid</a></li>
+<li><a href="http://www.youtube.com/watch?v=LOacOkmd9FI">Working With UI Templates</a></li>
+<li><a href="http://www.youtube.com/watch?v=KRGvdID4rPE">Extending Controls with Control Templates</a></li>
+<li><a href="http://www.youtube.com/watch?v=WC25C5AHYAI">Element-To-Element Binding</a></li>
+<li><a href="http://www.youtube.com/watch?v=cFxf3OBIj8Q">Working With Resources</a></li>
+</ul><h3>Buckshot Online Sandbox</h3>
+
+<p><a href="http://www.lucastudios.com/trybuckshot">Online Interactive Buckshot</a></p>
+
+<h3>Reference Material</h3>
+
+<ul>
+<li><a href="http://www.lucastudios.com/trybuckshot/docs/">API Reference</a></li>
+<li><a href="https://github.com/prujohn/Buckshot/wiki/_pages">Wiki Documentation</a></li>
+<li><a href="https://github.com/prujohn/Buckshot/wiki/How-To-Contribute">Developers: How To Contribute</a></li>
+</ul><h2>Features</h2>
+
+<table>
+<tr>
+<td>Template-Driven</td>
+<td>Similar to Xaml, but more simplified and flexible.</td>
+</tr>
+<tr>
+<td>Actions</td>
+<td>Event-driven actions, like playing animations, changing properties, etc, in XML templates instead of code (you can also do it in code too, if desired)</td>
+</tr>
+<tr>
+<td>Controls</td>
+<td>Dozens of controls included with the core library, everything from primitive shapes to complex template-supporting controls, like ListBox</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Declaratively set keyframe animations for your elements, and off you go (still new, has some limitations)</td>
+</tr>
+<tr>
+<td>Data Binding</td>
+<td>
+Buckshot supports 4 different types of binding from XML templates (or in code):  Resource binding, element-to-element binding, data binding, and template binding</td>
+</tr>
+<tr>
+<td>Events</td>
+<td>.net folks will find this model to be very familiar.  We use it to wrap DOM events and for other internal events, but you can use it in your own apps</td>
+</tr>
+<tr>
+<td>Style Templates</td>
+<td>Use a common style library among multiple elements.  Individual changes to style property values will automatically update any elements using that style</td>
+</tr>
+<tr>
+<td>Extensibility</td>
+<td>Everything in Buckshot is designed to be extensible, so you can create libraries of your own controls, resources, and more</td>
+</tr>
+</table><p><strong>And Much, Much More</strong> <a href="https://github.com/prujohn/Buckshot/wiki/What-is-Buckshot%3F">More Details Here</a></p>
+
+<h2>Dependencies</h2>
+
+<ul>
+<li><a href="https://github.com/prujohn/dart-xml">Dart-XML</a></li>
+</ul><h2>License</h2>
+
+<p>Apache 2.0. See license.txt for project licensing information.</p>
+
+<h2>Contact</h2>
+
+<p>John</p>
+
+<p>Here on github or <a href="http://www.lucastudios.com/contact">http://www.lucastudios.com/contact</a></p>
+
+<p>G+: <a href="https://plus.google.com/115427174005651655317/about">https://plus.google.com/115427174005651655317/about</a></p>
+
+<p>Blog: <a href="http://phylotic.blogspot.com">http://phylotic.blogspot.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Buckshot maintained by <a href="https://github.com/prujohn">prujohn</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
