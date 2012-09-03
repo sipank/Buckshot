@@ -5,7 +5,7 @@ class ExtendedCalc implements IView {
   
   final FrameworkElement _rootVisual;
   
-  FrameworkElement get rootVisual() => _rootVisual;
+  FrameworkElement get rootVisual => _rootVisual;
   
   ExtendedCalc()
   :

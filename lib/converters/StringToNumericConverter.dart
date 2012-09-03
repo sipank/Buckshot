@@ -12,8 +12,8 @@ class StringToNumericConverter implements IValueConverter {
     if (value is! String || value == 'auto') return value;
 
     try{
-      return Math.parseDouble(value);
-    }catch(Exception e){
+      return parseDouble(value);
+    }on Exception catch(e){
       return value;
     }
   }

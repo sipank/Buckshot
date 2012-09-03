@@ -158,7 +158,7 @@ class Binding extends BuckshotObject
     }
   }
 
-  String get type() => "Binding";
+  String get type => "Binding";
 
 }
 

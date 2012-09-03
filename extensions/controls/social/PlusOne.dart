@@ -52,8 +52,8 @@ class PlusOne extends FrameworkElement
     }, PlusOneButtonSizes.standard, converter:const StringToPlusOneButtonSizeConverter());
   }
   
-  PlusOneAnnotationTypes get annotation() => getValue(annotationProperty);
-  PlusOneButtonSizes get size() => getValue(sizeProperty);
+  PlusOneAnnotationTypes get annotation => getValue(annotationProperty);
+  PlusOneButtonSizes get size => getValue(sizeProperty);
   
   /**
   * Injects javascript into the DOM, and optionally removes it after the script has run. */
@@ -75,7 +75,7 @@ class PlusOne extends FrameworkElement
     rawElement.attributes["size"] = "standard";
   }
   
-  String get type() => "PlusOne";
+  String get type => "PlusOne";
 }
 
 class PlusOneButtonSizes{

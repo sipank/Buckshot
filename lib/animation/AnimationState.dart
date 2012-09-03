@@ -21,16 +21,16 @@ class AnimationState extends FrameworkObject
     valueProperty = new FrameworkProperty(this, 'value', (_){});
   }
   
-  String get target() => getValue(targetProperty);
+  String get target => getValue(targetProperty);
   set target(String v) => setValue(targetProperty, v);
   
-  String get property() => getValue(propertyProperty);
+  String get property => getValue(propertyProperty);
   set property(String v) => setValue(propertyProperty, v);
   
-  Dynamic get value() => getValue(valueProperty);
+  Dynamic get value => getValue(valueProperty);
   set value(Dynamic v) => setValue(valueProperty, v);
     
   BuckshotObject makeMe() => new AnimationState();
     
-  String get type() => 'AnimationState';
+  String get type => 'AnimationState';
 }

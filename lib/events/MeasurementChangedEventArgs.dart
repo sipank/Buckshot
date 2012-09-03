@@ -9,5 +9,5 @@ class MeasurementChangedEventArgs extends EventArgs {
 
   MeasurementChangedEventArgs(this.oldMeasurement, this.newMeasurement);
 
-  String get type() => "MeasurementChangedEventArgs";
+  String get type => "MeasurementChangedEventArgs";
 }

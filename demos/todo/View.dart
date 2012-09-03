@@ -16,5 +16,5 @@ class View implements IView
     b.click + (_, __) => _rootVisual.dataContext.addNewEntry();
   }
   
-  FrameworkElement get rootVisual() => _rootVisual;
+  FrameworkElement get rootVisual => _rootVisual;
 }

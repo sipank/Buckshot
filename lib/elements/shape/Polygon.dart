@@ -18,5 +18,5 @@ class Polygon extends Shape
   }
   
   
-  String get shapeTag() => 'polygon';
+  String get shapeTag => 'polygon';
 }

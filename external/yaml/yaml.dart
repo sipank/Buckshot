@@ -5,6 +5,7 @@
 #library("yaml");
 
 #import("deep_equals.dart");
+#import('dart:math');
 
 #source("yaml_map.dart");
 #source("model.dart");

@@ -96,16 +96,16 @@ class ModalDialog extends Control
     return c.future;
   }
 
-  String get text() => getValue(textProperty);
+  String get text => getValue(textProperty);
   set text(String v) => setValue(textProperty, v);
   
-  String get title() => getValue(titleProperty);
+  String get title => getValue(titleProperty);
   set title(String v) => setValue(titleProperty, v);
     
 /// Overridden [BuckshotObject] method.
   FrameworkObject makeMe() => new ModalDialog();
 
-  String get defaultControlTemplate() {
+  String get defaultControlTemplate {
     return
         '''
 <controltemplate controlType='${this.templateName}'>
@@ -129,7 +129,7 @@ class ModalDialog extends Control
   }
 
 
-  String get type() => "ModalDialog";
+  String get type => "ModalDialog";
 }
 
 

@@ -27,7 +27,7 @@ class YouTube extends FrameworkElement
     });
   }
   
-  String get videoID() => getValue(videoIDProperty);
+  String get videoID => getValue(videoIDProperty);
   set videoID(String value) => setValue(videoIDProperty, value);
   
   
@@ -38,5 +38,5 @@ class YouTube extends FrameworkElement
     rawElement.attributes["frameborder"] = "0";
   }
   
-  String get type() => "YouTube";
+  String get type => "YouTube";
 }

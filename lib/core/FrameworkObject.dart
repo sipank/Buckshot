@@ -12,7 +12,7 @@ class FrameworkObject extends BuckshotObject {
   FrameworkObject _parent;
   bool _isLoaded = false;
 
-  bool get isLoaded() => _isLoaded;
+  bool get isLoaded => _isLoaded;
   set isLoaded(bool v) => _isLoaded = v;
 
   /// Represents the data context assigned to the FrameworkElement.
@@ -317,17 +317,17 @@ class FrameworkObject extends BuckshotObject {
   /// Sets the [nameProperty] value.
   set name(String value) => setValue(nameProperty, value);
   /// Gets the [nameProperty] value.
-  String get name() => getValue(nameProperty);
+  String get name => getValue(nameProperty);
 
   /// Sets the parent FrameworkElement.
   set parent(FrameworkObject value) => _parent = value;
   /// Gets the parent FrameworkElement.
-  FrameworkObject get parent() => _parent;
+  FrameworkObject get parent => _parent;
 
   /// Sets the [dataContextProperty] value.
   set dataContext(Dynamic value) => setValue(dataContextProperty, value);
   /// Gets the [dataContextProperty] value.
-  Dynamic get dataContext() => getValue(dataContextProperty);
+  Dynamic get dataContext => getValue(dataContextProperty);
 
   void applyVisualTemplate() {
     //the base method just calls CreateElement
@@ -385,6 +385,6 @@ class FrameworkObject extends BuckshotObject {
   /// visual layout.
   void updateLayout(){}
 
-  String get type() => "FrameworkObject";
+  String get type => "FrameworkObject";
 
 }

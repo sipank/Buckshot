@@ -31,17 +31,17 @@ class RadialGradientBrush extends Brush {
   /// Sets the [stopsProperty] value.
   set stops(List<GradientStop> value) => setValue(stopsProperty, value);
   /// Gets the [stopsProperty] value.
-  List<GradientStop> get stops() => getValue(stopsProperty);
+  List<GradientStop> get stops => getValue(stopsProperty);
   
   /// Sets the [drawModeProperty] value.
   set drawMode(RadialGradientDrawMode value) => setValue(drawModeProperty, value);
   /// Gets the [drawModeProperty] value.
-  RadialGradientDrawMode get drawMode() => getValue(drawModeProperty);
+  RadialGradientDrawMode get drawMode => getValue(drawModeProperty);
   
   /// Sets the [fallbackColorProperty] value.
   set fallbackColor(Color value) => setValue(fallbackColorProperty, value);
   /// Gets the [fallbackColorProperty] value.
-  Color get fallbackColor() => getValue(fallbackColorProperty);
+  Color get fallbackColor => getValue(fallbackColorProperty);
   
   
   void _initRadialGradientProperties(){
@@ -81,5 +81,5 @@ class RadialGradientBrush extends Brush {
     element.style.background = "radial-gradient(50% 50%, ${drawMode.toString()}, ${colorString})";
   }
   
-  String get type() => "RadialGradientBrush";
+  String get type => "RadialGradientBrush";
 }

@@ -1,7 +1,7 @@
 
 #import('dart:html');
 #import('../lib/Buckshot.dart');
-#import('package:dart-xml/lib/xml.dart');
+#import('package:dart-xml/xml.dart');
 #import('../external/shared/shared.dart');
 #import('../external/web/web.dart');
 #import('package:DartNet-Event-Model/events.dart');

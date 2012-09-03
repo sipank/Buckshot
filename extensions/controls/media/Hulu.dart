@@ -31,7 +31,7 @@ class Hulu extends FrameworkElement
     });
   }
   
-  String get videoID() => getValue(videoIDProperty);
+  String get videoID => getValue(videoIDProperty);
   set videoID(String value) => setValue(videoIDProperty, value);
   
   void calculateWidth(value){
@@ -74,5 +74,5 @@ class Hulu extends FrameworkElement
     rawElement.nodes.add(embed);
   }
   
-  String get type() => "Hulu";
+  String get type => "Hulu";
 }

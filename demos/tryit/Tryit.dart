@@ -73,23 +73,23 @@ void main() {
       FrameworkObject userContent = Template.deserialize(tbUserInput.text.trim());
       borderContent.content = userContent;
     }
-    catch(AnimationException ae){
+    on AnimationException catch(ae){
       tbError.text = "An error occurred while attempting to process an animation resource: ${ae}";
       borderContent.content = errorUI;
     }
-    catch(PresentationProviderException pe){
+    on PresentationProviderException catch(pe){
       tbError.text = "We were unable to parse your input into content for display: ${pe}";
       borderContent.content = errorUI;
     }
-    catch(FrameworkPropertyResolutionException pre){
+    on FrameworkPropertyResolutionException catch(pre){
       tbError.text = "A framework error occured while attempting to resolve a property binding: ${pre}";
       borderContent.content = errorUI;
     }
-    catch(BuckshotException fe){
+    on BuckshotException catch(fe){
       tbError.text = "A framework error occured while attempting to render the content: ${fe}";
       borderContent.content = errorUI;
     }
-    catch(Exception e){
+    on Exception catch(e){
       tbError.text = "A general exception occured while attempting to render the content.  Please bear with us as we (and Dart) are still in the early stages of development.  Thanks! ${e}";
       borderContent.content = errorUI;
     }

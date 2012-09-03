@@ -10,7 +10,7 @@ class Control extends FrameworkElement
 
   FrameworkElement template;
 
-  String get defaultControlTemplate() => '';
+  String get defaultControlTemplate => '';
 
   bool _visualTemplateApplied = false;    // flags if visual template applied
   bool _templateApplied = false;          // flags if a template was used during applyVisualTemplate();
@@ -38,7 +38,7 @@ class Control extends FrameworkElement
 
   }
 
-  bool get isEnabled() => getValue(isEnabledProperty);
+  bool get isEnabled => getValue(isEnabledProperty);
   set isEnabled(bool value) => setValue(isEnabledProperty, value);
 
   void applyVisualTemplate(){
@@ -116,7 +116,7 @@ class Control extends FrameworkElement
   }
 
   /// Gets a standardized name for assignment to the [ControlTemplate] 'controlType' property.
-  String get templateName() => 'template_${type}';
+  String get templateName => 'template_${type}';
 
-  String get type() => "Control";
+  String get type => "Control";
 }

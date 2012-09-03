@@ -22,10 +22,10 @@ class StyleSetter extends BuckshotObject
     value = propertyValue;
   }
 
-  Dynamic get value() => getValue(valueProperty);
+  Dynamic get value => getValue(valueProperty);
   set value(Dynamic newValue) => setValue(valueProperty, newValue);
   
-  String get property() => getValue(propertyProperty);
+  String get property => getValue(propertyProperty);
   set property(String v) => setValue(propertyProperty, v);
   
   void _initStyleSetterProperties(){
@@ -34,5 +34,5 @@ class StyleSetter extends BuckshotObject
     propertyProperty = new FrameworkProperty(this, "property", (String v){});
   }
   
-  String get type() => "StyleSetter";
+  String get type => "StyleSetter";
 }

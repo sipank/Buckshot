@@ -58,7 +58,7 @@ class Button extends Control implements IFrameworkContainer
   }
 
   /// Gets the [contentProperty] value.
-  Dynamic get content() => getValue(contentProperty);
+  Dynamic get content => getValue(contentProperty);
   /// Sets the [contentProperty] value.
   set content(Dynamic value) => setValue(contentProperty, value);
 
@@ -69,5 +69,5 @@ class Button extends Control implements IFrameworkContainer
     rawElement.style.display = 'block';
   }
 
-  String get type() => "Button";
+  String get type => "Button";
 }

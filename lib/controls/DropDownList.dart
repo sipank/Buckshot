@@ -83,11 +83,11 @@ class DropDownList extends Control
     }
   }
   
-  DropDownItem get selectedItem() => getValue(selectedItemProperty);
+  DropDownItem get selectedItem => getValue(selectedItemProperty);
   
-  List<String> get itemsSource() => getValue(itemsSourceProperty);
+  List<String> get itemsSource => getValue(itemsSourceProperty);
   
-  ObservableList<DropDownItem> get items() => getValue(itemsProperty);
+  ObservableList<DropDownItem> get items => getValue(itemsProperty);
   
   /// Overridden [BuckshotObject] method.
   BuckshotObject makeMe() => new DropDownList();
@@ -97,7 +97,7 @@ class DropDownList extends Control
     rawElement = new Element.tag('select');
   }
     
-  String get type() => "DropDownList";
+  String get type => "DropDownList";
 }
 
 
@@ -119,12 +119,12 @@ class DropDownItem extends BuckshotObject
     valueProperty = new FrameworkProperty(this, "value", (Dynamic v){}, null);
   }
   
-  String get name() => getValue(nameProperty);
+  String get name => getValue(nameProperty);
   set name(String v) => setValue(nameProperty, v);
   
-  Dynamic get value() => getValue(valueProperty);
+  Dynamic get value => getValue(valueProperty);
   set value(Dynamic v) => setValue(valueProperty, v);
   
   
-  String get type() => "DropDownItem";
+  String get type => "DropDownItem";
 }

@@ -26,7 +26,7 @@ Future _functionToFuture(Function f){
 
   try{
     window.requestAnimationFrame(doIt);
-  }catch (Exception e){
+  }on Exception catch (e){
     c.completeException(e);
   }
 

@@ -136,29 +136,29 @@ class TreeNode extends Control implements IFrameworkContainer
   
   
   // IFrameworkContainer interface
-  get content() => template;
+  get content => template;
   
-  get header() => getValue(headerProperty);
+  get header => getValue(headerProperty);
   set header(value) => setValue(headerProperty, value);
   
-  get indicator() => getValue(indicatorProperty);
+  get indicator => getValue(indicatorProperty);
   set indicator(value) => setValue(indicatorProperty, value);
   
-  FrameworkElement get folderIcon() => getValue(folderIconProperty);
+  FrameworkElement get folderIcon => getValue(folderIconProperty);
   set folderIcon(FrameworkElement value) => setValue(folderIconProperty, value);
   
-  FrameworkElement get fileIcon() => getValue(fileIconProperty);
+  FrameworkElement get fileIcon => getValue(fileIconProperty);
   set fileIcon(FrameworkElement value) => setValue(fileIconProperty, value);
   
-  Visibility get childVisibility() => getValue(childVisibilityProperty);
+  Visibility get childVisibility => getValue(childVisibilityProperty);
   set childVisibility(Visibility value) => setValue(childVisibilityProperty, value);
   
-  ObservableList<TreeNode> get childNodes() => getValue(childNodesProperty);
+  ObservableList<TreeNode> get childNodes => getValue(childNodesProperty);
   
   /// Overridden [BuckshotObject] method.
   FrameworkObject makeMe() => new TreeNode();
     
-  String get defaultControlTemplate() {
+  String get defaultControlTemplate {
     return
     '''<controltemplate controlType="${this.templateName}">
           <template>
@@ -183,5 +183,5 @@ class TreeNode extends Control implements IFrameworkContainer
     ''';
   }
   
-  String get type() => "TreeNode";
+  String get type => "TreeNode";
 }

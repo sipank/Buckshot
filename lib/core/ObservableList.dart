@@ -30,6 +30,10 @@ class ObservableList<T> implements List<T>{
   
   void forEach(void f(element)) => _list.forEach(f);
   
+  Dynamic reduce(Dynamic initialValue,
+                 Dynamic combine(Dynamic previousValue, T element)) =>
+                     _list.reduce(initialValue, combine);
+  
   Collection map(f(T element)) => _list.map(f);
   
   Collection<T> filter(bool f(T element)) => _list.filter(f);
@@ -44,7 +48,7 @@ class ObservableList<T> implements List<T>{
   
   int lastIndexOf(T element, [int start = 0]) => _list.lastIndexOf(element, start);
   
-  int get length() => _list.length;
+  int get length => _list.length;
   
   List getRange(int start, int length) => _list.getRange(start, length);
   

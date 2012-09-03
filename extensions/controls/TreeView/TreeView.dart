@@ -180,18 +180,18 @@ class TreeView extends Panel
   }
   
   // FrameworkProperty getters/setters
-  num get indent() => getValue(indentProperty);
+  num get indent => getValue(indentProperty);
   set indent(num value) => setValue(indentProperty, value);
   
   /// Sets the [borderColorProperty] value.
   set borderColor(SolidColorBrush value) => setValue(borderColorProperty, value);
   /// Gets the [borderColorProperty] value.
-  SolidColorBrush get borderColor() => getValue(borderColorProperty);
+  SolidColorBrush get borderColor => getValue(borderColorProperty);
 
   /// Sets the [borderThicknessProperty] value.
   set borderThickness(Thickness value) => setValue(borderThicknessProperty, value);
   /// Gets the [borderThicknessProperty] value.
-  Thickness get borderThickness() => getValue(borderThicknessProperty);
+  Thickness get borderThickness => getValue(borderThicknessProperty);
   
   
   void createElement(){
@@ -201,7 +201,7 @@ class TreeView extends Panel
   }
   
   // Identity reflection
-  String get type() => "TreeView";
+  String get type => "TreeView";
 }
 
 

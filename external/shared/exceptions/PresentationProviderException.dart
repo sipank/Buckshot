@@ -12,5 +12,5 @@ class PresentationProviderException extends ExceptionBase
 {
   const PresentationProviderException([var msg]);
   
-  String get type() => "PresentationProviderException";
+  String get type => "PresentationProviderException";
 }

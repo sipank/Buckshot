@@ -39,10 +39,10 @@ class RadioButton extends Control
     };
   }
   
-  String get value() => getValue(valueProperty);
+  String get value => getValue(valueProperty);
   set value(String v) => setValue(valueProperty, v);
   
-  String get groupName() => getValue(groupNameProperty);
+  String get groupName => getValue(groupNameProperty);
   set groupName(String v) => setValue(groupNameProperty, v);
   
   
@@ -56,5 +56,5 @@ class RadioButton extends Control
     selectionChanged.invoke(this, new EventArgs());
   }
   
-  String get type() => "RadioButton";
+  String get type => "RadioButton";
 }

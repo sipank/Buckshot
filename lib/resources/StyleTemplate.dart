@@ -24,12 +24,12 @@ class StyleTemplate extends FrameworkResource
     }  
     
   /** Gets the [StyleSetter] [ObservableList] from [settersProperty]. */
-  ObservableList<StyleSetter> get setters() => getValue(settersProperty);
+  ObservableList<StyleSetter> get setters => getValue(settersProperty);
   /** Setst he [StyleSetter] [ObsersableList] from [settersProperty]. */
   set setters(ObservableList<StyleSetter> value) => setValue(settersProperty, value);
     
   /** Returns a [Collection] of [FrameworkElement]'s registered to the StyleTemplate */
-  Collection<FrameworkElement> get registeredElements() => _registeredElements;
+  Collection<FrameworkElement> get registeredElements => _registeredElements;
   
   /**
   * Copies setters from one or more [templates] into the current StyleTemplate.
@@ -132,5 +132,5 @@ class StyleTemplate extends FrameworkResource
     });
   }
   
-  String get type() => "StyleTemplate";
+  String get type => "StyleTemplate";
 }

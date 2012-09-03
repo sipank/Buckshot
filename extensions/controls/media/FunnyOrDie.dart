@@ -27,7 +27,7 @@ class FunnyOrDie extends FrameworkElement
     });
   }
   
-  String get videoID() => getValue(videoIDProperty);
+  String get videoID => getValue(videoIDProperty);
   set videoID(String value) => setValue(videoIDProperty, value);
   
   
@@ -36,5 +36,5 @@ class FunnyOrDie extends FrameworkElement
     rawElement.attributes["frameborder"] = "0";
   }
   
-  String get type() => "FunnyOrDie";
+  String get type => "FunnyOrDie";
 }

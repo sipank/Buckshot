@@ -123,7 +123,7 @@ class _Composer extends _Visitor {
     var match = const RegExp("^[-+]?[0-9]+\$").firstMatch(content);
     if (match != null) {
       return new _ScalarNode(_Tag.yaml("int"),
-          value: Math.parseInt(match.group(0)));
+          value: parseInt(match.group(0)));
     }
 
     match = const RegExp("^0o([0-7]+)\$").firstMatch(content);
@@ -140,7 +140,7 @@ class _Composer extends _Visitor {
     match = const RegExp("^0x[0-9a-fA-F]+\$").firstMatch(content);
     if (match != null) {
       return new _ScalarNode(_Tag.yaml("int"),
-          value: Math.parseInt(match.group(0)));
+          value: parseInt(match.group(0)));
     }
 
     return null;
@@ -156,20 +156,20 @@ class _Composer extends _Visitor {
       // floats by removing the trailing dot.
       var matchStr = match.group(0).replaceAll(new RegExp(@"\.$"), "");
       return new _ScalarNode(_Tag.yaml("float"),
-          value: Math.parseDouble(matchStr));
+          value: parseDouble(matchStr));
     }
 
     match = const RegExp("^([+-]?)\.(inf|Inf|INF)\$").firstMatch(content);
     if (match != null) {
       var infinityStr = match.group(1) == "-" ? "-Infinity" : "Infinity";
       return new _ScalarNode(_Tag.yaml("float"),
-          value: Math.parseDouble(infinityStr));
+          value: parseDouble(infinityStr));
     }
 
     match = const RegExp("^\.(nan|NaN|NAN)\$").firstMatch(content);
     if (match != null) {
       return new _ScalarNode(_Tag.yaml("float"),
-          value: Math.parseDouble("NaN"));
+          value: parseDouble("NaN"));
     }
 
     return null;

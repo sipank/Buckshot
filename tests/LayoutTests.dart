@@ -307,7 +307,7 @@ class BorderDebug implements IView {
   :
     _rootElement = Template.deserialize(Template.getTemplate('#borderTest'));
 
-  FrameworkElement get rootVisual() => _rootElement;
+  FrameworkElement get rootVisual => _rootElement;
 }
 
 
@@ -319,7 +319,7 @@ class StackPanelDebug implements IView {
   :
     _rootElement = Template.deserialize(Template.getTemplate('#stackPanelTest'));
 
-  FrameworkElement get rootVisual() => _rootElement;
+  FrameworkElement get rootVisual => _rootElement;
 }
 
 class GridDebug implements IView
@@ -330,7 +330,7 @@ class GridDebug implements IView
   :
     _rootElement = Template.deserialize(Template.getTemplate('#gridTest'));
 
-  FrameworkElement get rootVisual() => _rootElement;
+  FrameworkElement get rootVisual => _rootElement;
 }
 
 /// Tests the given measurements against the bounding measurements of a given element.

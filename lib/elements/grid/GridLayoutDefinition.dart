@@ -22,11 +22,11 @@ class GridLayoutDefinition extends BuckshotObject{
     
     _adjustedLengthInternal = value;
   }
-  num get _adjustedLength() => _adjustedLengthInternal;
+  num get _adjustedLength => _adjustedLengthInternal;
     
   num maxLength = 32767; //why not? ;)
   num minLength = 0;
   
   BuckshotObject makeMe() => new GridLayoutDefinition();
-  String get type() => "GridLayoutDefinition";
+  String get type => "GridLayoutDefinition";
 }

@@ -19,11 +19,11 @@ class BuckshotObject extends HashableObject{
   abstract BuckshotObject makeMe();
 
   /// Gets the stateBag [HashMap<String, Dynamic>] for the object.
-  HashMap<String, Dynamic> get stateBag() => _stateBag;
+  HashMap<String, Dynamic> get stateBag => _stateBag;
 
   /// Gets a boolean value indicating whether the given object
   /// is a container or not.
-  bool get isContainer() => this is IFrameworkContainer;
+  bool get isContainer => this is IFrameworkContainer;
 
   /// Returns a boolean value indicting whether the object contains
   /// a [FrameworkProperty] by the given friendly [propertyName].
@@ -105,7 +105,7 @@ class BuckshotObject extends HashableObject{
 
   String safeName(String name) => '${name}${hashCode()}';
 
-  abstract String get type();
+  abstract String get type;
 
   String toString() => type;
 }

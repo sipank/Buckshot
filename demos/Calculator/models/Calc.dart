@@ -140,7 +140,7 @@ class Calc implements ICalculator
     _updateOutput();
   }
     
-  int get _state() {
+  int get _state {
     if (!numBuffer2.isEmpty()) return SOPERAND;
     if (!currentOp.isEmpty()) return OP;
     if (!numBuffer1.isEmpty()) return FOPERAND;
@@ -186,7 +186,7 @@ class Calc implements ICalculator
     if (_state != FOPERAND && _state != SOPERAND) return;
     
     if (number == number.floor()){
-      number = Math.parseInt(number.toString().replaceAll('.0', ''));
+      number = parseInt(number.toString().replaceAll('.0', ''));
     }
     
     if (_state == FOPERAND){
@@ -205,7 +205,7 @@ class Calc implements ICalculator
     if (str.endsWith('.')){
       str = str.substring(0, str.length - 1);
     }
-    return  str.contains('.') ? Math.parseDouble(str) : Math.parseInt(str);
+    return  str.contains('.') ? parseDouble(str) : parseInt(str);
   }
   
   num _getNumberFrom(String str){
@@ -214,7 +214,7 @@ class Calc implements ICalculator
       str = str.substring(0, str.length - 1);
     }
     
-    return str.contains('.') ? Math.parseDouble(str) : Math.parseInt(str);
+    return str.contains('.') ? parseDouble(str) : parseInt(str);
   }
   
   /* Operators */
@@ -284,7 +284,7 @@ class Calc implements ICalculator
     
     if (v == null) return;
       
-    _putNumber(Math.sqrt(v));
+    _putNumber(sqrt(v));
         
     _updateOutput();
   }
@@ -299,19 +299,19 @@ class Calc implements ICalculator
     _updateOutput();
   }
   
-  void sin(){
+  void sinm(){
     num v = _getNumber();
     if (v == null) return;
     
-    _putNumber(Math.sin(v));
+    _putNumber(sin(v));
     _updateOutput();
   }
   
-  void cos(){
+  void cosm(){
     num v = _getNumber();
     if (v == null) return;
     
-    _putNumber(Math.cos(v));
+    _putNumber(cos(v));
     _updateOutput();
   }
   
@@ -392,7 +392,7 @@ class Calc implements ICalculator
     
     var result = operators[currentOp]();
     if (result == result.floor()){
-      result = Math.parseInt(result.toString().replaceAll('.0', ''));
+      result = parseInt(result.toString().replaceAll('.0', ''));
     }
     clear();
     

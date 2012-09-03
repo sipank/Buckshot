@@ -26,14 +26,14 @@ class SolidColorBrush extends Brush
   }
   
   set color(Color c) => setValue(colorProperty, c);
-  Color get color() => getValue(colorProperty);
+  Color get color => getValue(colorProperty);
   
   void renderBrush(Element element){
     element.style.background = "${color}";
 //    element.style.setProperty('fill', "${color}");
   }
   
-  String get type() => "SolidColorBrush";
+  String get type => "SolidColorBrush";
 }
 
 

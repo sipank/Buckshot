@@ -3,7 +3,7 @@ class Main implements IView
   final FrameworkElement _rootVisual;
   final DropDownList ddlMode;
   
-  FrameworkElement get rootVisual() => _rootVisual;
+  FrameworkElement get rootVisual => _rootVisual;
   
   Main()
   :

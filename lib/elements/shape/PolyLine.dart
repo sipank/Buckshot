@@ -19,5 +19,5 @@ class PolyLine extends Shape
   }
   
   
-  String get shapeTag() => 'polyline';
+  String get shapeTag => 'polyline';
 }

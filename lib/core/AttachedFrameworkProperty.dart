@@ -16,5 +16,5 @@ class AttachedFrameworkProperty extends FrameworkPropertyBase
         buckshot._attachedProperties[this] = new HashMap<FrameworkElement, Dynamic>();
       }
     
-    String get _type() => "AttachedFrameworkProperty";
+    String get _type => "AttachedFrameworkProperty";
 }

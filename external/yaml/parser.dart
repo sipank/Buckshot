@@ -483,10 +483,10 @@ class _Parser {
   }
 
   /** Returns whether the current position is at the beginning of a line. */
-  bool get atStartOfLine() => column == 0;
+  bool get atStartOfLine => column == 0;
 
   /** Returns whether the current position is at the end of the input. */
-  bool get atEndOfFile() => pos == len;
+  bool get atEndOfFile => pos == len;
 
   /**
    * Given an indicator character, returns the type of that indicator (or null
@@ -656,7 +656,7 @@ class _Parser {
     if (!captureAs('', () => consumeChar(char))) return false;
     var captured = captureAndTransform(
         () => nAtOnce(digits, (c, _) => isHexDigit(c)),
-        (hex) => new String.fromCharCodes([Math.parseInt("0x$hex")]));
+        (hex) => new String.fromCharCodes([parseInt("0x$hex")]));
     return expect(captured, "$digits hexidecimal digits");
   }
 
@@ -1899,5 +1899,5 @@ class _BlockHeader {
 
   _BlockHeader(this.additionalIndent, this.chomping);
 
-  bool get autoDetectIndent() => additionalIndent == null;
+  bool get autoDetectIndent => additionalIndent == null;
 }

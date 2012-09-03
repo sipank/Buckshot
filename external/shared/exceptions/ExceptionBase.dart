@@ -8,5 +8,5 @@ class ExceptionBase implements Exception{
  
   const ExceptionBase([var msg]);
   
-  String get type() => "ExceptionBase";
+  String get type => "ExceptionBase";
 }

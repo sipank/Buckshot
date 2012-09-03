@@ -8,7 +8,7 @@
 * It is normally not be necessary to create your own instance
 * of the [Buckshot] class.
 */
-Buckshot get buckshot() => new Buckshot._cached();
+Buckshot get buckshot => new Buckshot._cached();
 
 
 /**
@@ -55,7 +55,7 @@ class Buckshot extends FrameworkObject {
   static Buckshot _ref;
   
   
-  BrowserInfo get browserInfo() => _browserInfo;
+  BrowserInfo get browserInfo => _browserInfo;
   
 
   /// Pass the ID of the element in the DOM where buckshot will render content.
@@ -281,13 +281,13 @@ class Buckshot extends FrameworkObject {
   }
 
   /// Gets the innerWidth of the window
-  int get windowWidth() => getValue(windowWidthProperty);
+  int get windowWidth => getValue(windowWidthProperty);
 
   /// Gets the innerHeight of the window
-  int get windowHeight() => getValue(windowHeightProperty);
+  int get windowHeight => getValue(windowHeightProperty);
 
   /// Gets the Buckshot version.
-  String get version() => getValue(versionProperty);
+  String get version => getValue(versionProperty);
 
   /// Sets the given [IView] as the root visual element.
   set rootView(IView view){
@@ -300,7 +300,7 @@ class Buckshot extends FrameworkObject {
   }
 
   /// Gets the currently assigned [IView].
-  IView get rootView() => _currentView;
+  IView get rootView => _currentView;
 
   /// Wraps a FrameworkElement into an [IView] and sets it as the root view.
   void renderRaw(FrameworkElement element){
@@ -322,7 +322,7 @@ class Buckshot extends FrameworkObject {
     this._objectRegistry.forEach((k, v) => print('${v is FrameworkElement || v is FrameworkResource ? v.type : "()"}'));
   }
 
-  String get type() => "BuckshotSystem";
+  String get type => "BuckshotSystem";
   }
 
 

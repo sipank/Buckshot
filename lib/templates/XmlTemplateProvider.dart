@@ -10,7 +10,7 @@
 class XmlTemplateProvider implements IPresentationFormatProvider {
 
   //TODO MIME as identifier type instead?
-  String get fileExtension() => "xml";
+  String get fileExtension => "xml";
 
   bool isFormat(String template) => template.startsWith('<');  
   
@@ -50,7 +50,7 @@ class XmlTemplateProvider implements IPresentationFormatProvider {
 
           //no data binding for attached properties
           setAttachedPropertyFunction(newElement,
-            Math.parseInt(e.text.trim()));
+            parseInt(e.text.trim()));
           }else{
             //element or resource
 
@@ -260,7 +260,7 @@ class XmlTemplateProvider implements IPresentationFormatProvider {
           try{
             new Binding(buckshot.namedElements[ne].resolveProperty(prop),
               p, bindingMode:mode);
-          }catch (Exception err){
+          }on Exception catch (err){
             //try to bind late...
             FrameworkProperty theProperty =
                 buckshot.namedElements[ne].resolveFirstProperty(prop);

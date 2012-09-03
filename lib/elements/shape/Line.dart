@@ -18,5 +18,5 @@ class Line extends Shape
     
   }
   
-  String get shapeTag() => 'line';
+  String get shapeTag => 'line';
 }

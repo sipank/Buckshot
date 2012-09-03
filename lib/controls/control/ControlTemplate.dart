@@ -22,7 +22,7 @@ class ControlTemplate extends FrameworkResource implements IFrameworkContainer
     this._stateBag[FrameworkObject.CONTAINER_CONTEXT] = templateProperty;
   }
   
-  get content() => getValue(templateProperty);
+  get content => getValue(templateProperty);
   
   void _initializeControlTemplateProperties(){
     controlTypeProperty = new FrameworkProperty(this, "controlType", (_){}, "");
@@ -33,11 +33,11 @@ class ControlTemplate extends FrameworkResource implements IFrameworkContainer
     new Binding(this.controlTypeProperty, this.keyProperty);
   }
   
-  String get controlType() => getValue(controlTypeProperty);
+  String get controlType => getValue(controlTypeProperty);
   set controlType(String value) => setValue(controlTypeProperty, value);
   
-  FrameworkElement get template() => getValue(templateProperty);
+  FrameworkElement get template => getValue(templateProperty);
   set template(FrameworkElement value) => setValue(templateProperty, value);
   
-  String get type() => "ControlTemplate";
+  String get type => "ControlTemplate";
 }

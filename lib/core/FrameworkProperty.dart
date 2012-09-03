@@ -34,7 +34,7 @@ class FrameworkProperty extends FrameworkPropertyBase
   ///
   /// Generally, this should not be access directly, but through:
   ///     getValue({propertyName});
-  Dynamic get value() => _value;
+  Dynamic get value => _value;
   set value(Dynamic v) {
     if (readOnly){
       throw const BuckshotException('Attempted to write to a read-only property.');
@@ -44,7 +44,7 @@ class FrameworkProperty extends FrameworkPropertyBase
  
   
   /// Gets the previous value assigned to the FrameworkProperty.
-  Dynamic get previousValue() => _previousValue;
+  Dynamic get previousValue => _previousValue;
   Dynamic _previousValue;
   bool readOnly = false;
     
@@ -72,7 +72,7 @@ class FrameworkProperty extends FrameworkPropertyBase
     }
   }
    
-  String get type() => "FrameworkProperty";
+  String get type => "FrameworkProperty";
 }
 
 /// A [FrameworkProperty] that supports participation in transition/animation features.
@@ -86,5 +86,5 @@ class AnimatingFrameworkProperty extends FrameworkProperty{
   }
   
   
-  String get type() => "AnimatingFrameworkProperty";
+  String get type => "AnimatingFrameworkProperty";
 }

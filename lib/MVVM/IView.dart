@@ -12,7 +12,7 @@ class IView {
   FrameworkElement _rootElement;
   
   /// Gets the visual root of the view.
-  FrameworkElement get rootVisual() => _rootElement;
+  FrameworkElement get rootVisual => _rootElement;
   
   /// Constructs a view from a given [FrameworkElement].
   IView.from(FrameworkElement element){

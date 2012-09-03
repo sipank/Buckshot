@@ -46,14 +46,14 @@ class Color extends FrameworkResource
   }
   
   /// Gets the R (red) component of the RGB color.
-  num get R() => Math.parseInt('0x${value.substring(1,3)}');
+  num get R => parseInt('0x${value.substring(1,3)}');
   /// Gets the G (green) component of the RGB color.
-  num get G() => Math.parseInt('0x${value.substring(3,5)}');
+  num get G => parseInt('0x${value.substring(3,5)}');
   /// Gets the B (blue) compoonent of the RGB color.
-  num get B() => Math.parseInt('0x${value.substring(5,7)}');
+  num get B => parseInt('0x${value.substring(5,7)}');
   
   /// Gets the [valueProperty] value.
-  String get value() => getValue(valueProperty);
+  String get value => getValue(valueProperty);
   /// Sets the [valueProperty] value.
   set value(String c) => setValue(valueProperty, c);
   
@@ -69,5 +69,5 @@ class Color extends FrameworkResource
   /// Returns the string representation of the color.
   String toString() => value;
   
-  String get type() => "Color";
+  String get type => "Color";
 }

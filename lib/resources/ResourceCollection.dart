@@ -17,7 +17,7 @@ class ResourceCollection extends FrameworkResource implements IFrameworkContaine
     resources.listChanged + _onListChanging;
   }
   
-  get content() => resources;
+  get content => resources;
   
   void _onListChanging(Object _, ListChangedEventArgs args){
     
@@ -31,5 +31,5 @@ class ResourceCollection extends FrameworkResource implements IFrameworkContaine
     }
   }
   
-  String get type() => "ResourceCollection";
+  String get type => "ResourceCollection";
 }

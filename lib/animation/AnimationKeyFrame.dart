@@ -23,15 +23,15 @@ class AnimationKeyFrame extends BuckshotObject
     statesProperty = new FrameworkProperty(this, 'states', (_){}, new List<AnimationState>());
   }
   
-  num get time() => getValue(timeProperty);
+  num get time => getValue(timeProperty);
   set time(num v) => setValue(timeProperty, v);
   
-  List<AnimationState> get states() => getValue(statesProperty);
+  List<AnimationState> get states => getValue(statesProperty);
   set states(List<AnimationState> v) => setValue(statesProperty, v);
   
   
   /// Overridden [BuckshotObject] method.
   BuckshotObject makeMe() => new AnimationKeyFrame();
   
-  String get type() => 'AnimationKeyFrame';
+  String get type => 'AnimationKeyFrame';
 }

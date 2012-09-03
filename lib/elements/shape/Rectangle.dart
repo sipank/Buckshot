@@ -44,9 +44,9 @@ class Rectangle extends Shape{
     
   }
   
-  String get shapeTag() => 'rect';
+  String get shapeTag => 'rect';
   
-  String get type() => 'Rectangle';
+  String get type => 'Rectangle';
   
   void createElement(){
     rawElement = new DivElement();
