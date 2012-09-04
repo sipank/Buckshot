@@ -1,8 +1,8 @@
 #import('../../buckshot.dart');
 #import('package:dart_utils/shared.dart');
 #import('dart:html');
-#source('View.dart');
-#source('ViewModel.dart');
+#source('view.dart');
+#source('view_model.dart');
 
 
 void main() {
