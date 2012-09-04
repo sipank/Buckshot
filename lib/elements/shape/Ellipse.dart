@@ -24,7 +24,7 @@ class Ellipse extends Shape{
       if (v is! num) return;
       
       var result = v / 2;
-      shapeElement.attributes['cx'] = result;
+      shapeElement.attributes['cx'] = '$result';
       setValue(_rxProperty, result);
       
     });
@@ -33,7 +33,7 @@ class Ellipse extends Shape{
       if (v is! num) return;
       
       var result = v / 2;
-      shapeElement.attributes['cy'] = result;
+      shapeElement.attributes['cy'] = '$result';
       setValue(_ryProperty, result);
 
     });

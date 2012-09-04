@@ -46,13 +46,13 @@ class Shape extends FrameworkElement
     _swProperty = new FrameworkProperty(this, '_sw', (v){
       if (v is! num) return;
           
-      _svgWrapper.attributes['width'] = v;
+      _svgWrapper.attributes['width'] = '$v';
     });
     
     _shProperty = new FrameworkProperty(this, '_sh', (v){
       if (v is! num) return;
       
-      _svgWrapper.attributes['height'] = v;
+      _svgWrapper.attributes['height'] = '$v';
     });
     
     new Binding(widthProperty, _swProperty);

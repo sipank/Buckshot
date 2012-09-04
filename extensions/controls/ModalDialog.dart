@@ -4,7 +4,7 @@
 
 #library('controls.buckshotui.org');
 
-#import('../../lib/Buckshot.dart');
+#import('../../buckshot.dart');
 
 /**
 * A Buckshot control that displays a general purpose

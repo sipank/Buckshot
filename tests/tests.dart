@@ -1,9 +1,9 @@
 
 #import('dart:html');
-#import('../lib/Buckshot.dart');
+#import('../buckshot.dart');
 #import('package:dart-xml/xml.dart');
-#import('../external/shared/shared.dart');
-#import('../external/web/web.dart');
+#import('package:dart_utils/web.dart');
+#import('package:dart_utils/shared.dart');
 #import('package:DartNet-Event-Model/events.dart');
 #import('../extensions/controls/DockPanel.dart');
 

@@ -5,10 +5,10 @@
 #library('controls.buckshotui.org');
 
 #import('dart:html');
-#import('../../../lib/Buckshot.dart');
+#import('../../../buckshot.dart');
 #import('package:DartNet-Event-Model/events.dart');
-#import('../../../external/web/web.dart');
-#import('../../../external/shared/shared.dart');
+#import('package:dart_utils/web.dart');
+#import('package:dart_utils/shared.dart');
 
 #source('TreeNode.dart');
 

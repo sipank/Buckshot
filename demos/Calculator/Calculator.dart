@@ -1,6 +1,6 @@
 #import('dart:html');
 #import('dart:math');
-#import('../../lib/Buckshot.dart');
+#import('../../buckshot.dart');
 #import('package:DartNet-Event-Model/events.dart');
 
 #source('common/ICalculator.dart');

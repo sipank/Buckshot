@@ -1,4 +1,4 @@
-#import('../../lib/Buckshot.dart');
+#import('../../buckshot.dart');
 #import('../../extensions/controls/TreeView/TreeView.dart');
 
 
