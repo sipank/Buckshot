@@ -5,7 +5,7 @@
 #import('package:dart_utils/web.dart');
 #import('package:dart_utils/shared.dart');
 #import('package:DartNet-Event-Model/events.dart');
-#import('../extensions/controls/DockPanel.dart');
+#import('../extensions/controls/dock_panel.dart');
 
 // point this to wherever your copy of the dart source code is
 #import('package:unittest/unittest.dart');

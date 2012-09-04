@@ -10,7 +10,7 @@
 #import('package:dart_utils/web.dart');
 #import('package:dart_utils/shared.dart');
 
-#source('TreeNode.dart');
+#source('tree_node.dart');
 
 /**
 * Displays a heirachical list of [TreeNode] elements.

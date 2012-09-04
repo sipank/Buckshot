@@ -6,16 +6,16 @@
 #import('../../buckshot.dart');
 #import('package:dart_utils/shared.dart');
 #import('package:DartNet-Event-Model/events.dart');
-#import('../../extensions/controls/media/MediaPack.dart');
-#import('../../extensions/controls/ListBox.dart');
-#import('../../extensions/controls/ModalDialog.dart');
-#import('../../extensions/controls/social/PlusOne.dart');
+#import('../../extensions/controls/media/media_pack.dart');
+#import('../../extensions/controls/list_box.dart');
+#import('../../extensions/controls/modal_dialog.dart');
+#import('../../extensions/controls/social/plus_one.dart');
 
 // these 2 imports are needed to support plusone...
 
-#source('Views.dart');
-#source('DemoViewModel.dart');
-#source('DemoModel.dart');
+#source('views.dart');
+#source('demo_view_model.dart');
+#source('demo_model.dart');
 
 
 void main() {

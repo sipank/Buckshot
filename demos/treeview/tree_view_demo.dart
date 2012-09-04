@@ -1,5 +1,5 @@
 #import('../../buckshot.dart');
-#import('../../extensions/controls/TreeView/TreeView.dart');
+#import('../../extensions/controls/treeview/tree_view.dart');
 
 
 void main() {
