@@ -6,10 +6,10 @@
 
 #import('../../../buckshot.dart');
 
-#import('YouTube.dart');
-#import('Hulu.dart');
-#import('Vimeo.dart');
-#import('FunnyOrDie.dart');
+#import('youtube.dart');
+#import('hulu.dart');
+#import('vimeo.dart');
+#import('funny_or_die.dart');
 
 /* Video and Audio Extensions for Buckshot Framework */ 
 

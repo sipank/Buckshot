@@ -5,40 +5,40 @@
 #import('package:dart_utils/web.dart');
 #import('package:dart_utils/shared.dart');
 #import('package:DartNet-Event-Model/events.dart');
-#import('../extensions/controls/DockPanel.dart');
+#import('../extensions/controls/dock_panel.dart');
 
 // point this to wherever your copy of the dart source code is
 #import('package:unittest/unittest.dart');
 #import('package:unittest/html_enhanced_config.dart');
 
-#source('InitializationTests.dart');
-#source('FrameworkFundamentalsTests.dart');
-#source('FrameworkPropertyTests.dart');
-#source('FrameworkElementTests.dart');
-#source('BindingTests.dart');
-#source('BorderTests.dart');
-#source('ButtonTests.dart');
-#source('ControlTests.dart');
-#source('FrameworkEventTests.dart');
-#source('FrameworkExceptionTests.dart');
-#source('FrameworkObjectTests.dart');
-#source('LayoutCanvasTests.dart');
-#source('ObservableListTests.dart');
-#source('PanelTests.dart');
-#source('StackPanelTests.dart');
-#source('TextBlockTests.dart');
-#source('GridTests.dart');
-#source('GridCellTests.dart');
-#source('TextBoxTests.dart');
-#source('RadioButtonGroupTests.dart');
-#source('DomHelpersTests.dart');
-#source('StyleTemplateTests.dart');
-#source('TemplateTests.dart');
-#source('StringToGridLengthConverterTests.dart');
-#source('ResourceTests.dart');
-#source('VarResourceTests.dart');
-#source('FrameworkAnimationTests.dart');
-#source('LayoutTests.dart');
+#source('initialization_tests.dart');
+#source('framework_fundamentals_tests.dart');
+#source('framework_property_tests.dart');
+#source('framework_element_tests.dart');
+#source('binding_tests.dart');
+#source('border_tests.dart');
+#source('button_tests.dart');
+#source('control_tests.dart');
+#source('framework_event_tests.dart');
+#source('framework_exception_tests.dart');
+#source('framework_object_tests.dart');
+#source('layout_canvas_tests.dart');
+#source('observable_list_tests.dart');
+#source('panel_tests.dart');
+#source('stack_panel_tests.dart');
+#source('text_block_tests.dart');
+#source('grid_tests.dart');
+#source('grid_cell_tests.dart');
+#source('text_box_tests.dart');
+#source('radio_button_group_tests.dart');
+#source('dom_helpers_tests.dart');
+#source('style_template_tests.dart');
+#source('template_tests.dart');
+#source('string_to_grid_length_converter_tests.dart');
+#source('resource_tests.dart');
+#source('var_resource_tests.dart');
+#source('framework_animation_tests.dart');
+#source('layout_tests.dart');
 
 void main() {
 
