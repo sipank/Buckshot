@@ -22,6 +22,7 @@ class Buckshot extends FrameworkObject
   static final String _defaultRootID = "#BuckshotHost";
   static final String _version = '0.55 Alpha';
 
+  Element _rootElt;
   StyleElement _buckshotCSS;
 
   /// Central registry of named [FrameworkObject] elements.
@@ -33,6 +34,11 @@ class Buckshot extends FrameworkObject
   /// Bindable window width/height properties.  Readonly, so can only
   /// bind from, not to.
   FrameworkProperty windowHeightProperty;
+
+  /// Bindable root width property. Readonly, so can only bind from, not to.
+  FrameworkProperty rootWidthProperty;
+  /// Bindable root height property. Readonly, so can only bind from, not to.
+  FrameworkProperty rootHeightProperty;
 
   /// Bindable property representing the current version of Buckshot
   FrameworkProperty versionProperty;
@@ -75,7 +81,7 @@ class Buckshot extends FrameworkObject
 
     _initCSS();
 
-    _initializeBuckshotProperties();
+    _initializeBuckshotProperties(rootID);
   }
 
   void _initCSS(){
@@ -89,12 +95,34 @@ class Buckshot extends FrameworkObject
         ' Buckshot StyleSheet.');
   }
 
-  void _initializeBuckshotProperties(){
+  void _setRootSize()
+  {
+    if (_rootElt == null) return;
+    _rootElt.rect.then((r) {
+      if (r.client.width != rootWidth) {
+        setValue(rootWidthProperty, r.client.width);
+      }
+      if (r.client.height != rootHeight) {
+        setValue(rootHeightProperty, r.client.height);
+      }
+    });
+  }
+
+  void _initializeBuckshotProperties(String rootID){
     versionProperty = new FrameworkProperty(Buckshot._ref,
       "version", (_){}, _version);
 
     //TODO unit test
     versionProperty.readOnly = true;
+
+    rootWidthProperty = new FrameworkProperty(
+        Buckshot._ref, "rootWidth", (_){}, 0);
+
+    rootHeightProperty = new FrameworkProperty(
+        Buckshot._ref, "rootHeight", (_){}, 0);
+
+    _rootElt = query(rootID);
+    _setRootSize();
 
     windowWidthProperty = new FrameworkProperty(
       Buckshot._ref, "windowWidth", (_){}, window.innerWidth);
@@ -113,6 +141,8 @@ class Buckshot extends FrameworkObject
       if (window.innerHeight != windowHeight){
         setValue(windowHeightProperty, window.innerHeight);
       }
+
+      _setRootSize();
     });
   }
 
@@ -121,6 +151,9 @@ class Buckshot extends FrameworkObject
 
   /// Gets the innerHeight of the window
   int get windowHeight => getValue(windowHeightProperty);
+
+  int get rootWidth  => getValue(rootWidthProperty);
+  int get rootHeight => getValue(rootHeightProperty);
 
   /// Gets the Buckshot version.
   String get version => getValue(versionProperty);
