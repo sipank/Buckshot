@@ -10,6 +10,8 @@ If you've worked with .net WPF or Silverlight then this framework will feel very
 Project is currently in the **alpha** stage of development.  It will likely not move to beta or v1.0 until after Dart ships v1.0. This is to ensure that that library is working correctly with the Dart APIs, which are still in flux.
 
 ## Getting Started ##
+Visit the [Buckshot Discussion Group](https://groups.google.com/forum/#!forum/buckshot-ui) for the latest information.
+
 ### Installation using the pub package manager ###
 
 In your Dart application, make a **pubspec.yaml** file and add this line to it:
@@ -40,10 +42,10 @@ This process should get easier over time as the pub utility matures.
 **Many more videos at the [Buckshot playlist on YouTube](http://www.youtube.com/playlist?list=PLE04C8698A5FD2E9E&feature=view_all).**
 
 ### Buckshot Online Sandbox ###
-[Online Interactive Buckshot](http://66.240.183.37/sandbox/)
+[Online Interactive Buckshot](http://www.buckshotui.org/sandbox/)
 
 ### Reference Material ###
-* [API Reference](http://66.240.183.37/docs/)
+* [API Reference](http://www.buckshotui.org/docs/)
 * [Wiki Documentation](https://github.com/prujohn/Buckshot/wiki/_pages)
 * [Developers: How To Contribute](https://github.com/prujohn/Buckshot/wiki/How-To-Contribute)
 
@@ -86,16 +88,14 @@ Buckshot supports 4 different types of binding from XML templates (or in code): 
 
 **And Much, Much More** [More Details Here] (https://github.com/prujohn/Buckshot/wiki/What-is-Buckshot%3F)
 
-## Dependencies (git submodules in the 'external' folder)
-* [Dart-XML](https://github.com/prujohn/dart-xml)
-
-## License
+## License ##
 Apache 2.0. See license.txt for project licensing information.
 
-## Contact
+## Contact ##
+Buckshot Discussion Group: <https://groups.google.com/forum/#!forum/buckshot-ui>
 
-John
+Buckshot on G+: <https://plus.google.com/b/105133271658972815666/105133271658972815666/posts>
 
-G+: https://plus.google.com/115427174005651655317/about
+John on G+: <https://plus.google.com/115427174005651655317/about>
 
-Blog: http://phylotic.blogspot.com
+Blog: <http://phylotic.blogspot.com>
